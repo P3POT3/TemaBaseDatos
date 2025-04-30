@@ -34,18 +34,11 @@ public class PruebaConexion {
 
             System.out.println(vendedorMaxVenta);
 
-//            int numFilas = st.executeUpdate("DELETE FROM vendedores WHERE dni = '765066462W'");
-//
-//            if (numFilas > 0) {
-//                System.out.println(numFilas + " Registros eliminados correctamente.");
-//            }
-
             st.close();
             rs.close();
             con.close();
         }catch (SQLException e) {
             System.out.println("La url o usuario o contraseña son incorrectas");
         }
-
     }
 }
