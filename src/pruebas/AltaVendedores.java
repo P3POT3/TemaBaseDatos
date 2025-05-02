@@ -30,7 +30,6 @@ public class AltaVendedores {
                 pstmt.setDouble(5, plantilla.get(key).getVentas());
 
                 registrosInsertados += pstmt.executeUpdate();
-
             }
 
             conn.commit();
