@@ -1,9 +1,16 @@
 package agenda;
 
 public class Contacto {
+
     private String nombre;
     private String telefono;
     private String email;
+
+    public Contacto() {
+        this.nombre="";
+        this.telefono="";
+        this.email="";
+    }
 
     public Contacto(String nombre, String telefono, String email) {
         this.nombre = nombre;
@@ -14,6 +21,7 @@ public class Contacto {
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -21,6 +29,7 @@ public class Contacto {
     public String getTelefono() {
         return telefono;
     }
+
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
@@ -28,11 +37,16 @@ public class Contacto {
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
 
+    @Override
     public String toString() {
-        return "Nombre: " + nombre + ", Telefono: " + telefono + ", Email: " + email;
+        return "Contacto [nombre=" + nombre + ", telefono=" + telefono + ", email=" + email + "]";
     }
+
+
+
 }
