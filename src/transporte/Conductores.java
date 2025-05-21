@@ -8,7 +8,8 @@ public class Conductores extends Autobuses {
     private String turnos;
     private String matricula_asignada;
 
-    public Conductores(String dni, String nombre, String licencia, int anos_experiencia, String turnos, String matricula_asignada) {
+    public Conductores(String dni, String nombre, String licencia, int anos_experiencia,
+                       String turnos, String matricula_asignada) {
         super("","","",0,0);
         this.dni = dni;
         this.nombre = nombre;
@@ -17,7 +18,8 @@ public class Conductores extends Autobuses {
         this.turnos = turnos;
         this.matricula_asignada = matricula_asignada;
     }
-    public Conductores(String dni, String nombre, String licencia, int anos_experiencia, String turnos, String matricula_asignada
+    public Conductores(String dni, String nombre, String licencia, int anos_experiencia,
+                       String turnos, String matricula_asignada
     ,String marca, String modelo, int kilometraje, int capacidad) {
         super(matricula_asignada, marca, modelo, kilometraje, capacidad);
         this.dni = dni;
